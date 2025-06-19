@@ -4,8 +4,8 @@ Functions
 These are the functions for the tempate package:
 
 
-.. autofunction:: template.dumpPackageData
+.. autofunction:: springboard.dumpPackageData
 
-.. autofunction:: template.module.test
+.. autofunction:: springboard.module.test
 
-.. autofunction:: template.module.uncovered
+.. autofunction:: springboard.module.uncovered

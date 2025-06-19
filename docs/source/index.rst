@@ -1,7 +1,5 @@
-Welcome to template-package!
-=============================
-
-This is template documentation for a template-package.
+Welcome to my Springboard course!
+=================================
 
 .. toctree::
    :maxdepth: 1

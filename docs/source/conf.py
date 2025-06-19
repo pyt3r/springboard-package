@@ -28,7 +28,7 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 author = meta['about']['author']
 project = meta['package']['name']
-copyright = f'2020, {author}'
+copyright = f'2025, {author}'
 release = str(meta['package']['version'])
 
 
@@ -72,9 +72,15 @@ html_static_path = ['_static']
 # sphinx-gallery configuration
 sphinx_gallery_conf = {
     # path to your example scripts
-    'examples_dirs': [ os.path.join('..', '..', 'examples') ],
+    'examples_dirs': [ 
+        os.path.join('..', '..', 'examples', 'examples1') 
+        os.path.join('..', '..', 'examples', 'examples2') 
+    ],
     # path to where to save gallery generated output
-    'gallery_dirs': ['examples'],
+    'gallery_dirs': [
+        'examples1', 
+        'examples2'
+    ],
     # specify that examples should be ordered according to filename
     #'within_subsection_order': FileNameSortKey,
     # directory where function granular galleries are stored
