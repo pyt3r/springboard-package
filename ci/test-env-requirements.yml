@@ -3,10 +3,22 @@ channels:
   - defaults
 dependencies:
   # build dependencies
+  - python>=3.9
   - conda-build
   - pyyaml
   - coverage
-  - flake8
   # ./examples dependencies
-  #- pandas
   #- matplotlib
+  - numpy
+  - pandas
+  - pyarrow
+  - pydantic
+  - fsspec
+  - requests
+  - aiohttp
+  - aenum
+  - sqlalchemy
+  - holoviews
+  - panel
+  - bokeh
+  - jupyter_bokeh

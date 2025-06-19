@@ -1,12 +1,12 @@
 import unittest
-from template.module import covered
+from springboard.module import covered
 
 
 class Test(unittest.TestCase):
 
     def test_module(self):
-        import template
-        print('template_package:', template)
+        import springboard
+        print('springboard_package:', springboard)
         assert covered() is not None
 
 

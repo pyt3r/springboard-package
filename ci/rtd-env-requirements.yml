@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   # build dependencies:
-  - python=3.8
+  - python>=3.9
   - pip
   - pyyaml
   - sphinx
@@ -13,5 +13,13 @@ dependencies:
   - pip:
       - rst2pdf
   # ./examples dependencies
-  - pandas
   - matplotlib
+  - numpy
+  - pandas
+  - pyarrow
+  - pydantic
+  - fsspec
+  - requests
+  - aiohttp
+  - aenum
+  - sqlalchemy

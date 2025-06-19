@@ -1,13 +1,12 @@
-PACKAGE_NAME=template
+PACKAGE_NAME=springboard
 PACKAGE_PATH=`python -c "import ${PACKAGE_NAME}, os; print(os.path.dirname(${PACKAGE_NAME}.__file__))"`
 TESTS_PATH=${PACKAGE_PATH}/tests
-PYVERSION=3.8
 
 test-env:
-	conda env create --file ci/test-env-requirements.yml python=${PYVERSION}
+	conda env create --file ci/test-env-requirements.yml
 
 rtd-env:
-	conda env create --file ci/rtd-env-requirements.yml python=${PYVERSION}
+	conda env create --file ci/rtd-env-requirements.yml
 
 _pip-env:
 	python -m venv pip-env
@@ -36,7 +35,7 @@ test:
 
 conda-package:
 	conda build . --output-folder=./
-	conda install ./**/*.tar.bz2
+	(conda install ./**/*.tar.bz2) || (conda install ./**/*.conda)
 
 test-package:
 	cd ${TESTS_PATH} && \
@@ -64,6 +63,9 @@ git-merge: # if your changes are in develop...
 	git pull
 	git merge origin/master
 	git push origin develop
+
+git-amend:
+	git commit --amend --no-edit
 
 clean:
 	rm -rf .coverage htmlcov coverage.xml

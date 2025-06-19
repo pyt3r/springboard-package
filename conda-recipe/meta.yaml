@@ -1,11 +1,11 @@
 package:
-  name: template
-  version: 0.0.7
+  name: springboard
+  version: 0.0.1
 
 about:
   author : pyt3r
   license_file: LICENSE
-  summary: a template python package
+  summary: springboard machine learning for engineers
 
 source:
   path: ..
@@ -13,14 +13,30 @@ source:
 build:
   noarch: python
   entry_points:
-    - template-entry-point = template.scripts.hello:world
+    - pyswark-entry-point = pyswark.scripts.hello:world
 
 requirements:
+  channels:
+    - defaults
+    - conda-forge
   build:
-    - python=3.8
+    - python>=3.9
     - pyyaml
+    - numpy
+    - pandas
+    - pyarrow
+    - pydantic
+    - fsspec
+    - requests
+    - aiohttp
+    - aenum
+    - sqlalchemy
+    - holoviews
+    - panel
+    - bokeh
+    - jupyter_bokeh
 
   run:
-    - python
+    - python>=3.9
     - pyyaml
     - coverage

@@ -1,5 +1,8 @@
 # Byte-compiled / optimized / DLL files
 
+# init not allowed at lib level
+/__init__.py
+
 .idea/
 
 __pycache__/
@@ -9,6 +12,9 @@ __pycache__/
 # C extensions
 *.so
 
+# metadata
+*.DS_Store
+
 # Distribution / packaging
 .Python
 build/
@@ -17,7 +23,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
