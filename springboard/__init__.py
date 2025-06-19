@@ -10,8 +10,8 @@ def test(engine='unittests'):
     """
     Runs the tests specified by the engine, i.e. ::
 
-        import template
-        template.test(engine='unittests')
+        import springboard
+        springboard.test(engine='unittests')
 
     Parameters
     ----------
@@ -25,7 +25,7 @@ def test(engine='unittests'):
     """
     import springboard
     from springboard.infra.drive_tests import drive_tests
-    return drive_tests(engine, template)
+    return drive_tests(engine, springboard)
 
 
 def dumpPackageData():
