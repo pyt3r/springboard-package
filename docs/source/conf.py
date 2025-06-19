@@ -73,7 +73,7 @@ html_static_path = ['_static']
 sphinx_gallery_conf = {
     # path to your example scripts
     'examples_dirs': [ 
-        os.path.join('..', '..', 'examples', 'examples1') 
+        os.path.join('..', '..', 'examples', 'examples1'),
         os.path.join('..', '..', 'examples', 'examples2') 
     ],
     # path to where to save gallery generated output
