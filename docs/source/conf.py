@@ -11,14 +11,15 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 
-import os
 import sys
+import pathlib
 from io import open
 import yaml
 import sphinx_rtd_theme
-here = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, os.path.join(here, '..', '..'))
-meta = yaml.safe_load(open(os.path.join(here, '..', '..', 'conda-recipe', 'meta.yaml'), 'rb'))
+here = pathlib.Path(__file__).resolve().parent
+pkg  = here / '..' / '..'
+sys.path.insert( 0, str( pkg ))
+meta = yaml.safe_load( open( pkg/ 'conda-recipe' / 'meta.yaml', 'rb' ))
 
 
 # -- Master document --------------------------------------------------------------
@@ -69,18 +70,16 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 
+_example_dir  = pathlib.Path( '..' ) / 'assignments'
+_example_dirs = [ d for d in _example_dir.iterdir() if d.is_dir() ]
+_gallery_dirs = [ d.name for d in _example_dirs ] 
+
 # sphinx-gallery configuration
 sphinx_gallery_conf = {
     # path to your example scripts
-    'examples_dirs': [ 
-        os.path.join('..', '..', 'examples', 'examples1'),
-        os.path.join('..', '..', 'examples', 'examples2') 
-    ],
+    'examples_dirs': _example_dirs,
     # path to where to save gallery generated output
-    'gallery_dirs': [
-        'examples1', 
-        'examples2'
-    ],
+    'gallery_dirs': _gallery_dirs,
     # specify that examples should be ordered according to filename
     #'within_subsection_order': FileNameSortKey,
     # directory where function granular galleries are stored

@@ -1,7 +1,7 @@
 Classes
 ==============
 
-.. autoclass:: template.template_class.TemplateClass
+.. autoclass:: springboard.template_class.TemplateClass
    :members:
 
 .. raw:: html

@@ -18,5 +18,6 @@ print( df )
 #%%
 # ## Lets plot the data
 
-df.plot(x='col1', y='col2', kind='line', title='col1 vs col2')
-plt.show()
+ax = df.plot(x='col1', y='col2', kind='line', title='col1 vs col2')
+
+# %%
