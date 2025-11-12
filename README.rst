@@ -21,10 +21,10 @@ The course curriculum is organized into 12 modules:
      * Stats vs ML
      * Deep Learning vs Machine Learning
      * Accuracy-Explainability Tradeoff
-     * Visual Intro
+     * Visual Intro to ML
 
 3. **Data Wrangling and Exploration**
-     * Feature Engineering
+     * EDA and Feature Engineering
      * Messy Data
 
 4. **Machine Learning With Sklearn**
@@ -55,14 +55,14 @@ The course curriculum is organized into 12 modules:
      * Vision Language Models
 
 8. **Natural Language Processing**
-     * NLP
+     * NLP Introduction
      * Large Language Models
 
 9. **Model Deployment**
      * ML Project Lifecycle
 
 10. **Amazon Web Services**
-      * Amazon Web Services
+      * Sagemaker
 
 11. **Monitoring and Maintenance**
 
