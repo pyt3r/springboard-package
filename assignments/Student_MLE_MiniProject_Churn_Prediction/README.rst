@@ -21,5 +21,5 @@ This project demonstrates two approaches to building a churn prediction model:
 2. **AWS SageMaker Implementation** (`AWS/ <AWS/>`_ subdirectory)
     * Production-ready pipeline using SageMaker Canvas (`AWS/churn.flow <AWS/churn.flow>`_) and Feature Store
     * Pipeline conversion and deployment notebook (`AWS/churn.ipynb <AWS/churn.ipynb>`_)
-    * For detailed setup instructions, see `AWS/instructions.md <AWS/instructions.md>`_
+    * For detailed setup instructions, see `AWS/README.md <AWS/README.md>`_
 
