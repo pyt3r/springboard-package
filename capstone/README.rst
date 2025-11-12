@@ -28,13 +28,13 @@ Project Structure & Notebooks
 
 This project is organized into four sequential notebooks that build upon each other:
 
-1. `0_EDA.ipynb <0_EDA.ipynb>`_ - Exploratory Data Analysis
+0. `0_EDA.ipynb <0_EDA.ipynb>`_ - Exploratory Data Analysis
    * Loads and examines raw OHLC (Open, High, Low, Close) and volume data
    * Visualizes price movements and trading volume over time
    * Identifies data quality issues, missing values, and temporal patterns
    * Prepares the dataset for feature engineering by sorting chronologically and setting date as index
 
-2. `1_Features_and_Target.ipynb <1_Features_and_Target.ipynb>`_ - Feature Engineering and Target Definition
+1. `1_Features_and_Target.ipynb <1_Features_and_Target.ipynb>`_ - Feature Engineering and Target Definition
    * **Momentum Indicators**: Creates moving averages (EMA), crossover signals, Bollinger Bands, and RSI (Relative Strength Index)
    * **Volatility Features**: Computes Average True Range (ATR) and realized volatility measures
    * **Volume Features**: Calculates On-Balance Volume (OBV) and Volume-Weighted Average Price (VWAP)
@@ -45,7 +45,7 @@ This project is organized into four sequential notebooks that build upon each ot
      - **Class 2 (Up)**: Price increase ≥ +1%
    * This 3-class approach filters out noise from small price movements and focuses on significant directional changes
 
-3. `2_Baseline.ipynb <2_Baseline.ipynb>`_ - Baseline Model Evaluation
+2. `2_Baseline.ipynb <2_Baseline.ipynb>`_ - Baseline Model Evaluation
    * Implements time-aware cross-validation using `TimeSeriesSplit` to prevent data leakage
    * Tests traditional machine learning baselines:
      - **Logistic Regression**: Linear classifier with multinomial loss for 3-class classification
@@ -54,7 +54,7 @@ This project is organized into four sequential notebooks that build upon each ot
    * Evaluates models using ROC-AUC, accuracy, F1-scores, and confusion matrices
    * Provides feature importance analysis to identify which indicators are most predictive
 
-4. `3_Model.ipynb <3_Model.ipynb>`_ - Deep Learning Models
+3. `3_Model.ipynb <3_Model.ipynb>`_ - Deep Learning Models
    * Creates sequences of 50 timesteps for time series modeling (uses past 50 days to predict next day)
    * Implements proper scaling order: create sequences → split train/test → scale using only training data
    * Trains two neural network architectures:
