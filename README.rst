@@ -112,11 +112,11 @@ Capstone Project
 ~~~~~~~~~~~~~~~~
 
 **Bitcoin Price Direction Prediction** (`capstone/ <capstone/>`_)
-     * Predicts next-day Bitcoin price direction using momentum indicators and technical analysis
-     * Implements comprehensive feature engineering (volatility, volume, momentum indicators)
-     * Compares baseline models (Logistic Regression, Random Forest, ARIMA) with deep learning models (Feedforward NN, LSTM)
-     * Uses proper time series validation to prevent data leakage
-     * Achieves meaningful predictive performance with a defensive bias useful for risk management
+   * Predicts next-day Bitcoin price direction using momentum indicators and technical analysis
+   * Implements comprehensive feature engineering (volatility, volume, momentum indicators)
+   * Compares baseline models (Logistic Regression, Random Forest, ARIMA) with deep learning models (Feedforward NN, LSTM)
+   * Uses proper time series validation to prevent data leakage
+   * Achieves meaningful predictive performance with a defensive bias useful for risk management
 
    See `capstone/README.rst <capstone/README.rst>`_ for detailed project documentation.
 
