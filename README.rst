@@ -72,7 +72,7 @@ The course curriculum is organized into 12 modules:
       * Case Studies
       * AI Future Ethical Trends
 
-Course Structure
+Coursework
 ----------------
 
 The course consisted of **6 mini projects** and **1 capstone project**, each designed to build practical machine learning skills through hands-on implementation:
