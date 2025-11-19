@@ -2,6 +2,10 @@
 Springboard - Machine Learning for Engineers
 =============================================================
 
+.. contents::
+   :depth: 2
+   :local:
+
 Course Overview
 ---------------
 
